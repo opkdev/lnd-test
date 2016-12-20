@@ -1,0 +1,11 @@
+# dir for temp sass files
+/.sass-cache
+
+# temp editors files
+*~
+
+# node_modules
+/js/node_modules
+
+# IDE settings ignoring
+.idea/

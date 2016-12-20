@@ -1,0 +1,82 @@
+.popup-form {
+	background:#263fa8;
+	padding: 50px;
+	margin:0px;
+	width: 500px;
+	text-align: center;
+	border: 0px solid #d6eeb8;
+	
+	.form-title {
+		display: block;
+		color: #ffffff;
+		margin: 0px;
+		font-size: 32px; 
+		line-height: 32px;
+		padding-bottom:15px;
+
+		span {
+			font-size: 24px; 
+		    line-height: 24px;
+		}
+	}
+
+	.form-text {
+		display: block;
+		color: #ffffff;
+		font-size: 18px; 
+	}
+
+	input, textarea {
+		border: 1px solid #ffffff;
+		background: #f4f4f4;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		height: 50px;
+		margin: 0 0 20px 0px;
+		padding: 0 0 0 70px;
+		width: 100%;
+		font-size: 18px;
+		@include border-radius(0px);
+	}
+	
+	input.name {
+		background: url("/img/iname.png") no-repeat scroll 10px 50% #ffffff;
+	}
+
+	input.phone {
+		background: url("/img/iphone.png") no-repeat scroll 10px 50% #ffffff;
+	}
+
+	textarea {
+		height: 150px;
+	}
+
+	.btn-doStuff {
+		background:#263fa8;
+		display: inline-block;
+		border: 2px solid #ffffff;
+		padding: 15px 20px;
+		text-align: center;
+		color: #ffffff;
+		@include border-radius(5px);
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: 20px;
+
+		&:hover {
+			text-decoration: none;
+			background: #ff0000;
+			color: #ffffff;
+		}
+	}
+
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) { 
+	.popup-form {
+		padding: 20px;
+		width: 100%;
+	}
+}
